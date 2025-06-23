@@ -1,0 +1,23 @@
+# Visual Studio folders
+.vs/
+*.vc.db
+*.suo
+
+# IntelliSense & PCH
+*.ipch
+*.pch
+
+# Debug/Release builds
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.log
+*.tlog
+*.lastbuildstate
+*.ilk
+
+# cocos2d-x build artifacts
+cocos2d/cocos2d/Debug.win32/
+cocos2d/cocos2d/Release.win32/

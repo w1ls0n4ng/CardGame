@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "engine/external/recast",
+					"jsonFile" : "directory-engine.external.recast-Debug-561d9a89456315afe9a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cocos2d/external/recast",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "engine/external/tinyxml2",
+					"jsonFile" : "directory-engine.external.tinyxml2-Debug-c5b5a248889a5b2ab311.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cocos2d/external/tinyxml2",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "engine/external/unzip",
+					"jsonFile" : "directory-engine.external.unzip-Debug-a3b2aaaff6f4955299b6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cocos2d/external/unzip",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "engine/external/flatbuffers",
+					"jsonFile" : "directory-engine.external.flatbuffers-Debug-b3d71594d9a3b1761e8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cocos2d/external/flatbuffers",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "engine/external/xxhash",
+					"jsonFile" : "directory-engine.external.xxhash-Debug-9e03bcb6c3d46a147645.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cocos2d/external/xxhash",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "engine/cocos/core",
+					"jsonFile" : "directory-engine.cocos.core-Debug-771af123fde1449ab7a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cocos2d/cocos",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "TemplateCpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TemplateCpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TemplateCpp-Debug-01f43aa981f8a5d4db9e.json",
+					"name" : "TemplateCpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "cocos2d::@b17589fc6237857a1771",
+					"jsonFile" : "target-cocos2d-Debug-6818c13e246854d6a513.json",
+					"name" : "cocos2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "flatbuffers::@67f93efe07fdd38cdb56",
+					"jsonFile" : "target-flatbuffers-Debug-81adae6ce27c38d9898c.json",
+					"name" : "flatbuffers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "recast::@49aedbc985f97720d891",
+					"jsonFile" : "target-recast-Debug-b51c2a092ab89195f284.json",
+					"name" : "recast",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "tinyxml2::@fd6ab661f4ee25a21ef0",
+					"jsonFile" : "target-tinyxml2-Debug-fa81ddd3c9daa5bb8d84.json",
+					"name" : "tinyxml2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "unzip::@05a8bf1aba81c1a16e64",
+					"jsonFile" : "target-unzip-Debug-2b3a3ab404e0dad8206d.json",
+					"name" : "unzip",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "xxhash::@11e20b8b9139209a045a",
+					"jsonFile" : "target-xxhash-Debug-313f19acf83b4cf6b110.json",
+					"name" : "xxhash",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Coding/SelfLearning/CocosPlayground/CardGame/out/build/x64-Debug",
+		"source" : "D:/Coding/SelfLearning/CocosPlayground/CardGame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
