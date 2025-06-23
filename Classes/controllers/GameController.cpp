@@ -2,6 +2,7 @@
 #include "PlayFieldController.h"
 #include "StackController.h"
 #include "../views/GameScene.h"
+#include "../configs/models/Params.h"
 #include "../configs/loaders/LevelConfigLoader.h"
 #include "../configs/models/LevelConfig.h"
 #include "../services/GameModelFromLevelGenerator.h"
@@ -18,7 +19,7 @@ void GameController::startGame() {
 
 	// Load the level configuration from a JSON file
 	LevelConfig levelConfig;
-	if (LevelConfigLoader::loadLevelConfig("TestLevel.json", levelConfig)) {
+	if (LevelConfigLoader::loadLevelConfig(K_LEVEL_CONFIG_PATH, levelConfig)) {
 		// Successfully loaded level configuration
 		CCLOG("Level configuration loaded successfully.");
 	} else {
