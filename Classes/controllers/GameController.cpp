@@ -63,10 +63,10 @@ void GameController::handleUndo() {
 	{
 		gameModel.incrementPlayFieldCardsLeft();
 		std::vector<unsigned int> cardsToFlipBack;
-		auto playField = gameModel.getPlayFieldNotConst();
+		auto& playField = gameModel.getPlayFieldNotConst();
 		for (auto& cardUid : record.coveredBefore)
 		{
-			auto cardModel = playField[cardUid];
+			auto& cardModel = playField[cardUid];
 			cardModel.setInteractable(false);
 
 			// If it is not covered by any cards add it to the flipBack vector
@@ -77,7 +77,8 @@ void GameController::handleUndo() {
 			cardModel.addCoveredBy(record.cardUid);
 		}
 		// Move the card back to the play field
-		GameScene::undoBackToPlayField(*gameScene, record.cardUid, record.prevPositionWorldVec);
+		GameScene::undoBackToPlayField(*gameScene, record.cardUid, gameModel.getCurrentZOrder(), record.prevPositionWorldVec);
+		gameModel.incrementZOrder();
 		for (auto& cardUid : cardsToFlipBack)
 		{
 			GameScene::flipCard(*gameScene, cardUid, true);

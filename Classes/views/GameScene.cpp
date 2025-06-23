@@ -315,7 +315,7 @@ void GameScene::moveStackCardSprite(Scene& gameScene, unsigned int cardUid, int 
     AudioEngine::play2d("correct.mp3");
 }
 
-void GameScene::undoBackToPlayField(Scene& gameScene, unsigned int cardUid, const cocos2d::Vec2& prevPositionWorldVec)
+void GameScene::undoBackToPlayField(Scene& gameScene, unsigned int cardUid, int zOrder, const cocos2d::Vec2& prevPositionWorldVec)
 {
     auto playFieldLayer = gameScene.getChildByName("playFieldBackground");
     auto stackLayer = gameScene.getChildByName("stackBackground");
@@ -326,7 +326,7 @@ void GameScene::undoBackToPlayField(Scene& gameScene, unsigned int cardUid, cons
     cardSprite->retain();
     cardSprite->removeFromParentAndCleanup(false);
     cardSprite->setPosition(relativePos);
-    playFieldLayer->addChild(cardSprite);
+    playFieldLayer->addChild(cardSprite, zOrder);
     cardSprite->release();
 
     // Run move + rotate animation while still in stackLayer
@@ -337,6 +337,8 @@ void GameScene::undoBackToPlayField(Scene& gameScene, unsigned int cardUid, cons
 
     auto sequence = Sequence::create(spawn, nullptr);
     cardSprite->runAction(sequence);
+
+    AudioEngine::play2d("correct.mp3");
 }
 
 void GameScene::winningScene(Scene& gameScene)

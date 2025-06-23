@@ -35,7 +35,7 @@ public:
     static void flipCard(Scene& gameScene, unsigned int cardUid, bool flipToBack);
 
     // Play the undo action back to the play field
-    static void undoBackToPlayField(Scene& gameScene, unsigned int cardUid, const cocos2d::Vec2 & prevPositionWorldVec);
+    static void undoBackToPlayField(Scene& gameScene, unsigned int cardUid, int zOrder, const cocos2d::Vec2 & prevPositionWorldVec);
 
     static void winningScene(Scene& gameScene);
 
